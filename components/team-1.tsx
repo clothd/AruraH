@@ -20,8 +20,8 @@ export default function Team() {
         <section className="bg-background @container py-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div className="space-y-4">
-                    <h2 className="text-balance font-serif text-4xl font-medium">Meet Our Founders</h2>
-                    <p className="text-muted-foreground text-balance">The visionary leaders behind our mission to transform how teams work and collaborate.</p>
+                    <h2 className="text-balance font-serif text-4xl font-medium">Meet the Team</h2>
+                    <p className="text-muted-foreground text-balance">The researchers and operators building the model - and the hospitality leaders helping train it.</p>
                 </div>
                 <div className="mt-12 grid gap-12 text-sm">
                     {members.map((member, index) => (

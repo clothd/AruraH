@@ -16,8 +16,8 @@ export default function Integrations() {
             <div className="mx-auto max-w-2xl">
                 <IntegrationsIllustration />
                 <div className="mx-auto mt-12 max-w-md text-balance px-6 text-center">
-                    <h2 className="font-serif text-4xl font-medium">Connect Your Favorite Tools</h2>
-                    <p className="text-muted-foreground mb-6 mt-4">Seamlessly integrate with the services you already use. Set up in minutes, not days.</p>
+                    <h2 className="font-serif text-4xl font-medium">Runs Where Guests Already Are</h2>
+                    <p className="text-muted-foreground mb-6 mt-4">AruraH operates natively over WhatsApp. No app downloads, no portals. Set up in days, not months.</p>
                     <Button
                         variant="secondary"
                         size="sm"

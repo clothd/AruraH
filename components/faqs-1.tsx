@@ -7,27 +7,27 @@ import Link from 'next/link'
 const faqItems = [
     {
         id: 'item-1',
-        question: 'How does the free trial work?',
+        question: 'What exactly is AruraH?',
         answer: 'Start with a 14-day free trial with full access to all features. No credit card required. You can upgrade to a paid plan at any time during or after the trial.',
     },
     {
         id: 'item-2',
-        question: 'Can I change my plan later?',
+        question: 'How do hotel contributors participate?',
         answer: "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate the difference.",
     },
     {
         id: 'item-3',
-        question: 'What payment methods do you accept?',
+        question: 'Is the model available to use today?',
         answer: 'We accept all major credit cards, PayPal, and bank transfers for annual plans. Enterprise customers can also pay via invoice.',
     },
     {
         id: 'item-4',
-        question: 'Is there a setup fee?',
+        question: 'What is Arura Cloud?',
         answer: 'No, there are no setup fees or hidden costs. You only pay for your subscription plan.',
     },
     {
         id: 'item-5',
-        question: 'Do you offer refunds?',
+        question: 'How is guest data handled?',
         answer: "We offer a 30-day money-back guarantee. If you're not satisfied, contact us within 30 days for a full refund.",
     },
 ]
@@ -38,7 +38,7 @@ export default function FAQs() {
             <div className="mx-auto max-w-2xl px-6">
                 <div className="text-center">
                     <h2 className="text-balance font-serif text-4xl font-medium">Frequently Asked Questions</h2>
-                    <p className="text-muted-foreground mx-auto mt-4 max-w-md text-balance">Find answers to common questions about our platform.</p>
+                    <p className="text-muted-foreground mx-auto mt-4 max-w-md text-balance">Common questions about AruraH and the research initiative.</p>
                 </div>
                 <Card
                     variant="outline"
@@ -64,7 +64,7 @@ export default function FAQs() {
                     <Link
                         href="#"
                         className="text-primary font-medium hover:underline">
-                        Contact support
+                        Contact the team
                     </Link>
                 </p>
             </div>

@@ -3,10 +3,9 @@ import { Logo } from '@/components/logo'
 
 const links = [
     { label: 'Home', href: '#' },
-    { label: 'Features', href: '#' },
-    { label: 'Pricing', href: '#' },
-    { label: 'About', href: '#' },
-    { label: 'Blog', href: '#' },
+    { label: 'Research', href: '#' },
+    { label: 'Model', href: '#' },
+    { label: 'Cloud', href: '#' },
     { label: 'Contact', href: '#' },
 ]
 
@@ -34,7 +33,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="@xl:flex-row @xl:justify-between flex flex-col-reverse gap-4 pt-8">
-                    <p className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} Veil.</p>
+                    <p className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} AruraH.</p>
                     <div className="flex flex-wrap gap-4">
                         <Link
                             href="#"

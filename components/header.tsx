@@ -9,9 +9,9 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/
 import { useMedia } from '@/hooks/use-media'
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'Company', href: '#link' },
+    { name: 'Research', href: '#link' },
+    { name: 'Model', href: '#link' },
+    { name: 'Cloud', href: '#link' },
 ]
 
 export const HeroHeader = () => {

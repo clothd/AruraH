@@ -5,25 +5,25 @@ export default function Stats() {
         <section className="bg-background @container pt-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div className="space-y-4">
-                    <h2 className="text-balance font-serif text-4xl font-medium">Trusted by Teams Worldwide</h2>
-                    <p className="text-muted-foreground text-balance">Our platform delivers measurable results that help businesses scale faster and work smarter.</p>
+                    <h2 className="text-balance font-serif text-4xl font-medium">Built with the Industry, for the Industry</h2>
+                    <p className="text-muted-foreground text-balance">AruraH is shaped by real hotel operators, not just engineers. The data, the edge cases, the instincts. All sourced from the field.</p>
                 </div>
                 <div className="@xl:grid-cols-3 mt-12 grid gap-6 text-sm">
                     <div className="border-t py-6">
                         <p className="text-muted-foreground text-xl">
-                            <span className="text-foreground font-medium">99.9%</span> Uptime guarantee.
+                            <span className="text-foreground font-medium">50+</span> Contributing hotel professionals.
                         </p>
                     </div>
 
                     <div className="border-t py-6">
                         <p className="text-muted-foreground text-xl">
-                            <span className="text-foreground font-medium">10M+</span> API requests processed daily.
+                            <span className="text-foreground font-medium">12+</span> Property types represented.
                         </p>
                     </div>
 
                     <div className="border-t py-6">
                         <p className="text-muted-foreground text-xl">
-                            <span className="text-foreground font-medium">500+</span> Enterprise customers.
+                            <span className="text-foreground font-medium">1,000s</span> of real guest scenarios modeled.
                         </p>
                     </div>
                 </div>

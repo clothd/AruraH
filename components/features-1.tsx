@@ -12,16 +12,16 @@ export default function Features() {
         <section className="bg-background @container py-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div>
-                    <h2 className="text-balance font-serif text-4xl font-medium">Powerful Features for Modern Teams</h2>
-                    <p className="text-muted-foreground mt-4 text-balance">Everything you need to build, connect, and scale your integrations effortlessly.</p>
+                    <h2 className="text-balance font-serif text-4xl font-medium">Built for the Future of Hospitality</h2>
+                    <p className="text-muted-foreground mt-4 text-balance">Everything needed to understand, train, and deploy an AI that thinks like your best front desk agent.</p>
                 </div>
                 <div className="@xl:grid-cols-2 mt-12 grid gap-3 *:p-6">
                     <Card
                         variant="outline"
                         className="row-span-2 grid grid-rows-subgrid">
                         <div className="space-y-2">
-                            <h3 className="text-foreground font-medium">Seamless Integrations</h3>
-                            <p className="text-muted-foreground text-sm">Connect your favorite tools and services with just a few clicks.</p>
+                            <h3 className="text-foreground font-medium">Deep Hospitality Context</h3>
+                            <p className="text-muted-foreground text-sm">rained on real scenarios across check-in, checkout, complaints, and guest rules. Not generic conversation.</p>
                         </div>
                         <div
                             aria-hidden
@@ -62,8 +62,8 @@ export default function Features() {
                         variant="outline"
                         className="row-span-2 grid grid-rows-subgrid overflow-hidden">
                         <div className="space-y-2">
-                            <h3 className="text-foreground font-medium">Real-time Sync</h3>
-                            <p className="text-muted-foreground text-sm">Keep your data synchronized across all platforms automatically.</p>
+                            <h3 className="text-foreground font-medium">Real-time Guest Handling</h3>
+                            <p className="text-muted-foreground text-sm">Responds to guests the moment they message. No delays, no hold music, no missed requests.</p>
                         </div>
                         <div
                             aria-hidden
@@ -79,8 +79,8 @@ export default function Features() {
                         variant="outline"
                         className="row-span-2 grid grid-rows-subgrid overflow-hidden">
                         <div className="space-y-2">
-                            <h3 className="text-foreground font-medium">Developer First</h3>
-                            <p className="text-muted-foreground mt-2 text-sm">Built with developers in mind, featuring comprehensive APIs and SDKs.</p>
+                            <h3 className="text-foreground font-medium">Research First</h3>
+                            <p className="text-muted-foreground mt-2 text-sm">Designed from the ground up to meet the reliability and compliance standards of large hotel operations.</p>
                         </div>
                         <div
                             aria-hidden
