@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { Logo } from '@/components/logo'
 
 const links = [
-    { label: 'Home', href: '#' },
+    { label: 'Home', href: '/' },
     { label: 'Research', href: '#' },
-    { label: 'Model', href: '#' },
+    { label: 'Model', href: '/white-paper' },
     { label: 'Cloud', href: '#' },
-    { label: 'Contact', href: '#' },
+    { label: 'Contact', href: '/contact' },
 ]
 
 export default function Footer() {

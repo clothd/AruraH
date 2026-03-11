@@ -12,16 +12,16 @@ export default function Features() {
         <section className="bg-background @container py-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div>
-                    <h2 className="text-balance font-serif text-4xl font-medium">Built for the Future of Hospitality</h2>
-                    <p className="text-muted-foreground mt-4 text-balance">Everything needed to understand, train, and deploy an AI that thinks like your best front desk agent.</p>
+                    <h2 className="text-balance font-serif text-4xl font-medium">Beyond Logic. Toward Empathy.</h2>
+                    <p className="text-muted-foreground mt-4 text-balance">Traditional AI is built for efficiency, but hospitality is built on feeling. We've moved past simple chatbots to create <strong>a Digital Hotelier</strong> that understands visual cues, detects guest frustration, and handles complaints with genuine grace. <br /><br /> We aren't here to replace <strong>humans</strong>; we're here to give them the tools to be more human. Our code is open to progress, not profit.</p>
                 </div>
                 <div className="@xl:grid-cols-2 mt-12 grid gap-3 *:p-6">
                     <Card
                         variant="outline"
                         className="row-span-2 grid grid-rows-subgrid">
                         <div className="space-y-2">
-                            <h3 className="text-foreground font-medium">Deep Hospitality Context</h3>
-                            <p className="text-muted-foreground text-sm">rained on real scenarios across check-in, checkout, complaints, and guest rules. Not generic conversation.</p>
+                            <h3 className="text-foreground font-medium">Visual Intelligence</h3>
+                            <p className="text-muted-foreground text-sm">"It sees what you see"<br /><br />From identifying a room maintenance issue via a guest's photo to recognizing VIP arrivals, our model processes the physical world.</p>
                         </div>
                         <div
                             aria-hidden
@@ -62,8 +62,8 @@ export default function Features() {
                         variant="outline"
                         className="row-span-2 grid grid-rows-subgrid overflow-hidden">
                         <div className="space-y-2">
-                            <h3 className="text-foreground font-medium">Real-time Guest Handling</h3>
-                            <p className="text-muted-foreground text-sm">Responds to guests the moment they message. No delays, no hold music, no missed requests.</p>
+                            <h3 className="text-foreground font-medium">Emotional EQ</h3>
+                            <p className="text-muted-foreground text-sm">"It feels the Tone"<br /><br />Using advanced sentiment analysis, the AI detects fatigue, disappointment, or excitement in a guest's tone, adjusting its response to match their mood.</p>
                         </div>
                         <div
                             aria-hidden
@@ -79,8 +79,8 @@ export default function Features() {
                         variant="outline"
                         className="row-span-2 grid grid-rows-subgrid overflow-hidden">
                         <div className="space-y-2">
-                            <h3 className="text-foreground font-medium">Research First</h3>
-                            <p className="text-muted-foreground mt-2 text-sm">Designed from the ground up to meet the reliability and compliance standards of large hotel operations.</p>
+                            <h3 className="text-foreground font-medium">Complaint Mastery</h3>
+                            <p className="text-muted-foreground mt-2 text-sm">"De-escalation with Dignity."<br /><br />Trained on decades of hospitality expertise, it turns "unhappy" into "understood" by prioritizing empathy before solutions.</p>
                         </div>
                         <div
                             aria-hidden
@@ -123,8 +123,8 @@ export default function Features() {
                         variant="outline"
                         className="row-span-2 grid grid-rows-subgrid">
                         <div className="space-y-2">
-                            <h3 className="font-medium">Enterprise Ready</h3>
-                            <p className="text-muted-foreground text-sm">Scale confidently with enterprise-grade security and reliability.</p>
+                            <h3 className="font-medium">Tech for People, Not Just Profit</h3>
+                            <p className="text-muted-foreground text-sm">As a nonprofit, our data stays ethical and our goal stays singular: elevating the hospitality industry.</p>
                         </div>
 
                         <div className="pointer-events-none relative -ml-7 flex size-44 items-center justify-center pt-5">

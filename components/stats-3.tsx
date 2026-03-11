@@ -5,25 +5,24 @@ export default function Stats() {
         <section className="bg-background @container pt-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div className="space-y-4">
-                    <h2 className="text-balance font-serif text-4xl font-medium">Built with the Industry, for the Industry</h2>
-                    <p className="text-muted-foreground text-balance">AruraH is shaped by real hotel operators, not just engineers. The data, the edge cases, the instincts. All sourced from the field.</p>
+                    <h2 className="text-balance font-serif text-4xl font-medium">Multimodal Guest Assistance</h2>
                 </div>
                 <div className="@xl:grid-cols-3 mt-12 grid gap-6 text-sm">
                     <div className="border-t py-6">
-                        <p className="text-muted-foreground text-xl">
-                            <span className="text-foreground font-medium">50+</span> Contributing hotel professionals.
+                        <p className="text-muted-foreground text-base">
+                            <span className="text-foreground font-medium block mb-2">Visual Recognition</span> Guests can snap a photo of a broken AC unit or a spilled drink. The AI identifies the issue instantly, categorizes the urgency, and alerts maintenance.
                         </p>
                     </div>
 
                     <div className="border-t py-6">
-                        <p className="text-muted-foreground text-xl">
-                            <span className="text-foreground font-medium">12+</span> Property types represented.
+                        <p className="text-muted-foreground text-base">
+                            <span className="text-foreground font-medium block mb-2">Seamless Wayfinding</span> "Where is the gym?" The AI provides a map or a photo of the entrance tailored to the guest's current location.
                         </p>
                     </div>
 
                     <div className="border-t py-6">
-                        <p className="text-muted-foreground text-xl">
-                            <span className="text-foreground font-medium">1,000s</span> of real guest scenarios modeled.
+                        <p className="text-muted-foreground text-base">
+                            <span className="text-foreground font-medium block mb-2">Menu Intelligence</span> Guests can photograph dietary restrictions, and the AI will scan your restaurant's menu to recommend safe, personalized dishes.
                         </p>
                     </div>
                 </div>

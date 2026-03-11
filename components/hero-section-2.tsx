@@ -91,17 +91,26 @@ export default function HeroSection() {
                                 </div>
                             </div>
                             <div className="mx-auto max-w-md text-center">
-                                <h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">Hospitality, handled. Intelligence, built in.</h1>
-                                <p className="text-muted-foreground mt-4 text-balance">AruraH is an open research model purpose-built to automate guest interactions, check-ins, complaints, and front desk operations, entirely through WhatsApp.</p>
+                                <h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">Meet the world's first nonprofit AI trained to see, feel, and serve as hoteliers</h1>
+                                <p className="text-muted-foreground mt-4 text-balance">We are a nonprofit initiative building a specialized, multimodal AI model trained to see, feel, and serve. Empowering hoteliers to deliver human connection at scale.</p>
 
-                                <Button
-                                    asChild
-                                    className="mt-6 pr-1.5">
-                                    <Link href="#link">
-                                        <span className="text-nowrap">Explore the Model</span>
-                                        <ChevronRight className="opacity-50" />
-                                    </Link>
-                                </Button>
+                                <div className="mt-6 flex flex-wrap justify-center gap-4">
+                                    <Button
+                                        asChild
+                                        className="pr-1.5">
+                                        <Link href="/white-paper">
+                                            <span className="text-nowrap">Explore the model</span>
+                                            <ChevronRight className="opacity-50" />
+                                        </Link>
+                                    </Button>
+                                    <Button
+                                        variant="outline"
+                                        asChild>
+                                        <Link href="/contact">
+                                            <span className="text-nowrap">Get early access</span>
+                                        </Link>
+                                    </Button>
+                                </div>
                             </div>
                         </div>
                     </div>
