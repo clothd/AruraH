@@ -9,9 +9,9 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/
 import { useMedia } from '@/hooks/use-media'
 
 const menuItems = [
-    { name: 'Research', href: '#link' },
-    { name: 'Model', href: '#link' },
-    { name: 'Cloud', href: '#link' },
+    { name: 'Research', href: '#research' },
+    { name: 'Model', href: '/white-paper' },
+    { name: 'Cloud', href: '#', disabled: true },
 ]
 
 export const HeroHeader = () => {
@@ -60,17 +60,10 @@ export const HeroHeader = () => {
                             <div className={cn('flex w-full flex-col space-y-3 duration-200 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit', isScrolled && 'lg:opacity-0 lg:blur-[4px]')}>
                                 <Button
                                     asChild
-                                    variant="ghost"
-                                    size="sm">
-                                    <Link href="#">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm">
-                                    <Link href="#">
-                                        <span>Sign Up</span>
+                                    size="sm"
+                                    className="px-6">
+                                    <Link href="/contact">
+                                        <span>Contact Us</span>
                                     </Link>
                                 </Button>
                             </div>
@@ -91,7 +84,7 @@ const NavItems = () => {
                         asChild
                         variant="ghost"
                         size="sm"
-                        className="w-full max-lg:h-12 max-lg:justify-start max-lg:text-lg">
+                        className={cn("w-full max-lg:h-12 max-lg:justify-start max-lg:text-lg", item.disabled && "text-muted-foreground opacity-50 pointer-events-none")}>
                         <Link
                             href={item.href}
                             className="text-base">

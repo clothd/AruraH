@@ -9,7 +9,7 @@ import { ClerkIconDark as Clerk } from '@/components/ui/svgs/clerk'
 
 export default function Features() {
     return (
-        <section className="bg-background @container py-24">
+        <section id="research" className="bg-background @container py-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div>
                     <h2 className="text-balance font-serif text-4xl font-medium">Beyond Logic. Toward Empathy.</h2>

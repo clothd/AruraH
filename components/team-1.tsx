@@ -2,22 +2,22 @@ import Image from 'next/image'
 
 const members = [
     {
-        avatar: 'https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=2754&auto=format&fit=crop',
-        name: 'Developers',
-        role: 'Engineering & Community',
-        bio: 'Contribute to the open-source hospitality core.',
+        avatar: 'https://media.licdn.com/dms/image/v2/D5603AQGjdjJrqv7ZNQ/profile-displayphoto-crop_800_800/B56Zzfg_lnH0AQ-/0/1773276495324?e=1775088000&v=beta&t=NPJXgQkRkMWl9PbWKKsUk3pc7sIt0WxOINGkMIaFbR8',
+        name: 'Stefan Djordjevic',
+        role: 'CEO & Co-Founder',
+        bio: 'Leading the vision for AruraH to empower hoteliers with empathetic AI, bridging the gap between technology and genuine human connection.',
     },
     {
-        avatar: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?q=80&w=2873&auto=format&fit=crop',
-        name: 'Hoteliers',
-        role: 'Hospitality Experts',
-        bio: 'Join our pilot program and help us refine empathy.',
+        avatar: 'https://media.licdn.com/dms/image/v2/D4D03AQHozWcPOZC2FQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712410917968?e=1775088000&v=beta&t=pFylyztfJeAMnLMwA_1Zlkunv_WivElfRK-PjOlh9pk',
+        name: 'José Carvalho',
+        role: 'CTO & Co-Founder',
+        bio: 'Currently serving as a Senior Systems Engineer at Authex Inc., contributing to advancements in AI/ML and Natural Language Processing while integrating blockchain and cryptocurrency technologies into innovative solutions.',
     },
     {
-        avatar: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop',
-        name: 'Partners',
-        role: 'Sponsorship',
-        bio: 'Sponsor a more human future for travel.',
+        avatar: 'https://media.licdn.com/dms/image/v2/D4E03AQG42Ehvfj-wBw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708270649533?e=1775088000&v=beta&t=x2mh2pAAslnAZQBmLIe0uYQz2J_UTcUyv1ueDdL2FBE',
+        name: 'Devain Sharma',
+        role: 'Senior Engineer',
+        bio: 'A human being currently residing on Earth - Orion arm - Milky way - Local group of galaxies.',
     },
 ]
 

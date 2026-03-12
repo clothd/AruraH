@@ -23,7 +23,7 @@ export default function Integrations() {
                         size="sm"
                         asChild
                         className="gap-1 pr-1.5">
-                        <Link href="#">
+                        <Link href="/white-paper">
                             Learn more
                             <ChevronRight />
                         </Link>

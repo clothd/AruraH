@@ -42,6 +42,14 @@ export default function ContactPage() {
                                 <input id="email" name="email" type="email" required className="w-full border rounded-md p-2 bg-background border-border" placeholder="you@example.com" />
                             </div>
                             <div>
+                                <label htmlFor="contributorType" className="block text-sm font-medium mb-1">Type of Contributor</label>
+                                <select id="contributorType" name="contributorType" required className="w-full border rounded-md p-2 bg-background border-border">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="developer_researcher">Developer/Researcher</option>
+                                    <option value="industry">Industry</option>
+                                </select>
+                            </div>
+                            <div>
                                 <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
                                 <textarea id="message" name="message" required className="w-full border rounded-md p-2 bg-background border-border h-32" placeholder="How can we collaborate?"></textarea>
                             </div>
