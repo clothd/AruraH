@@ -5,13 +5,14 @@ import { ChevronRight, Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
+import { NewsletterInput } from '@/components/newsletter-input'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react'
 import { useMedia } from '@/hooks/use-media'
 
 const menuItems = [
-    { name: 'Research', href: '#research' },
-    { name: 'Model', href: '/white-paper' },
-    { name: 'Cloud', href: '#', disabled: true },
+    { name: 'Home', href: '/' },
+    { name: 'Explore the model', href: '/white-paper' },
+    { name: 'Get involved', href: '/get-involved' },
 ]
 
 export const HeroHeader = () => {
@@ -84,7 +85,7 @@ const NavItems = () => {
                         asChild
                         variant="ghost"
                         size="sm"
-                        className={cn("w-full max-lg:h-12 max-lg:justify-start max-lg:text-lg", item.disabled && "text-muted-foreground opacity-50 pointer-events-none")}>
+                        className={cn("w-full max-lg:h-12 max-lg:justify-start max-lg:text-lg")}>
                         <Link
                             href={item.href}
                             className="text-base">
@@ -128,15 +129,7 @@ const FloatingNavPill = ({ isScrolled }: { isScrolled: boolean }) => {
                         className="flex origin-left items-center overflow-hidden rounded-full">
                         <>
                             <NavItems />
-                            <Button
-                                asChild
-                                size="sm"
-                                className="mx-2 gap-1 pr-1">
-                                <Link href="/contact">
-                                    <span>Get started</span>
-                                    <ChevronRight className="opacity-50" />
-                                </Link>
-                            </Button>
+                            <NewsletterInput buttonText="Get started" variant="default" size="sm" className="mx-2" />
                         </>
                     </motion.div>
                 )}

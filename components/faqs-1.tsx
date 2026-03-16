@@ -54,7 +54,7 @@ export default function FAQs() {
                     <Link
                         href="/contact"
                         className="text-primary font-medium hover:underline">
-                        Contact the team
+                        Contact us
                     </Link>
                 </p>
             </div>

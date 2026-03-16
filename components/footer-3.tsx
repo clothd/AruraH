@@ -3,9 +3,8 @@ import { Logo } from '@/components/logo'
 
 const links = [
     { label: 'Home', href: '/' },
-    { label: 'Research', href: '#research' },
-    { label: 'Model', href: '/white-paper' },
-    { label: 'Cloud', href: '#' },
+    { label: 'Explore the model', href: '/white-paper' },
+    { label: 'Get involved', href: '/get-involved' },
     { label: 'Contact', href: '/contact' },
 ]
 
@@ -36,12 +35,12 @@ export default function Footer() {
                     <p className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} AruraH.</p>
                     <div className="flex flex-wrap gap-4">
                         <Link
-                            href="#"
+                            href="/privacy"
                             className="text-muted-foreground hover:text-foreground text-sm transition-colors">
                             Privacy Policy
                         </Link>
                         <Link
-                            href="#"
+                            href="/terms"
                             className="text-muted-foreground hover:text-foreground text-sm transition-colors">
                             Terms of Service
                         </Link>

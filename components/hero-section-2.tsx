@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { HeroHeader } from './header'
+import { NewsletterInput } from '@/components/newsletter-input'
 import { ChevronRight } from 'lucide-react'
 import { Supabase } from '@/components/ui/svgs/supabase'
 import { Slack } from '@/components/ui/svgs/slack'
@@ -103,13 +104,7 @@ export default function HeroSection() {
                                             <ChevronRight className="opacity-50" />
                                         </Link>
                                     </Button>
-                                    <Button
-                                        variant="outline"
-                                        asChild>
-                                        <Link href="/contact">
-                                            <span className="text-nowrap">Get early access</span>
-                                        </Link>
-                                    </Button>
+                                    <NewsletterInput buttonText="Get early access" variant="outline" size="default" />
                                 </div>
                             </div>
                         </div>
