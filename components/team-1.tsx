@@ -2,27 +2,27 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
-const hoteliers = [
+// const hoteliers = [
+//     {
+//         avatar: 'https://media.licdn.com/dms/image/v2/D5603AQGjdjJrqv7ZNQ/profile-displayphoto-crop_800_800/B56Zzfg_lnH0AQ-/0/1773276495324?e=1775088000&v=beta&t=NPJXgQkRkMWl9PbWKKsUk3pc7sIt0WxOINGkMIaFbR8',
+//         name: 'Stefan Djordjevic',
+//         role: 'CEO & Co-Founder',
+//         bio: 'Leading the vision for AruraH to empower hoteliers with empathetic AI, bridging the gap between technology and genuine human connection.',
+//     }
+// ]
+
+const developers = [
     {
         avatar: 'https://media.licdn.com/dms/image/v2/D5603AQGjdjJrqv7ZNQ/profile-displayphoto-crop_800_800/B56Zzfg_lnH0AQ-/0/1773276495324?e=1775088000&v=beta&t=NPJXgQkRkMWl9PbWKKsUk3pc7sIt0WxOINGkMIaFbR8',
         name: 'Stefan Djordjevic',
-        role: 'CEO & Co-Founder',
+        role: 'CEO & Founder',
         bio: 'Leading the vision for AruraH to empower hoteliers with empathetic AI, bridging the gap between technology and genuine human connection.',
-    }
-]
-
-const developers = [
+    },
     {
         avatar: 'https://media.licdn.com/dms/image/v2/D4D03AQHozWcPOZC2FQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712410917968?e=1775088000&v=beta&t=pFylyztfJeAMnLMwA_1Zlkunv_WivElfRK-PjOlh9pk',
         name: 'José Carvalho',
         role: 'CTO & Co-Founder',
         bio: 'Currently serving as a Senior Systems Engineer at Authex Inc., contributing to advancements in AI/ML and Natural Language Processing while integrating blockchain and cryptocurrency technologies into innovative solutions.',
-    },
-    {
-        avatar: 'https://media.licdn.com/dms/image/v2/D4E03AQG42Ehvfj-wBw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708270649533?e=1775088000&v=beta&t=x2mh2pAAslnAZQBmLIe0uYQz2J_UTcUyv1ueDdL2FBE',
-        name: 'Devain Sharma',
-        role: 'Senior Engineer',
-        bio: 'A human being currently residing on Earth - Orion arm - Milky way - Local group of galaxies.',
     },
 ]
 
@@ -37,7 +37,7 @@ export default function Team() {
                     <h3 className="font-serif text-3xl font-medium mt-16 pt-8 block">Hoteliers</h3>
                 </div>
                 
-                <div className="mt-8 grid sm:grid-cols-3 gap-6 text-sm justify-center">
+                {/* <div className="mt-8 grid sm:grid-cols-3 gap-6 text-sm justify-center">
                     {hoteliers.map((member, index) => (
                         <div
                             key={index}
@@ -61,7 +61,7 @@ export default function Team() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
                 <div className="mt-8 text-center flex justify-center">
                     <Button variant="outline" asChild>
                         <Link href="/get-involved">Join as a hotelier</Link>
