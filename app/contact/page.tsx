@@ -26,7 +26,10 @@ export default function ContactPage() {
             <main className="flex-1 flex items-center justify-center p-6 mt-32">
                 <div className="max-w-md w-full bg-card p-8 rounded-xl shadow-sm border mt-16 mb-16">
                     <h1 className="text-4xl font-serif mb-6 text-center">Contact us</h1>
-                    <p className="text-muted-foreground text-center mb-8">Want to join as a collaborator or pilot the model? Let us know below.</p>
+                    <p className="text-muted-foreground text-center mb-2">Want to join as a collaborator or pilot the model? Let us know below.</p>
+                    <p className="text-muted-foreground text-sm text-center mb-8">
+                        1250 René-Lévesque Blvd W, Montreal, QC H3B 4W8, Canada
+                    </p>
                     {status === "success" ? (
                         <div className="bg-green-50 text-green-700 p-4 rounded-md border border-green-200 text-center">
                             Thank you! Your message has been received.
