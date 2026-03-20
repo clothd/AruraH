@@ -1,28 +1,21 @@
 "use server";
 
-import fs from "fs";
-import path from "path";
+import { supabase } from "@/lib/supabase";
 
 export async function submitContact(formData: FormData) {
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const contributorType = formData.get("contributorType") as string;
+    const message = formData.get("message") as string;
 
-    const logEntry = `[${new Date().toISOString()}] Name: ${name}, Email: ${email}, Message: ${message}\n`;
+    const { error } = await supabase.from("contact_submissions").insert({
+        name,
+        email,
+        contributor_type: contributorType,
+        message,
+    });
 
-    // Log directly to the console so we can see it in terminal
-    console.log("New Contact Submission:", logEntry);
-
-    // Also persist to a file in the root directory for later review
-    try {
-        const logPath = path.join(process.cwd(), "contact-submissions.log");
-        fs.appendFileSync(logPath, logEntry);
-    } catch (e) {
-        console.error("Failed to write to log file", e);
-    }
-
-    // Simulate network delay to show loading state nicely
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    if (error) throw new Error(error.message);
 
     return { success: true };
 }

@@ -1,10 +1,11 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { ChevronRight, Send, ArrowRight } from 'lucide-react'
+import { ChevronRight, ArrowRight } from 'lucide-react'
+import { subscribeNewsletter } from '@/app/newsletter/actions'
 
 export function NewsletterInput({ 
     buttonText = "Get started",
@@ -20,20 +21,28 @@ export function NewsletterInput({
     const [isOpen, setIsOpen] = useState(false)
     const [email, setEmail] = useState('')
     const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle")
+    const resetTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-    const handleSubmit = (e: React.FormEvent) => {
+    useEffect(() => {
+        return () => { if (resetTimer.current) clearTimeout(resetTimer.current) }
+    }, [])
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         if (!email) return
         setStatus("submitting")
-        // Simulate API call
-        setTimeout(() => {
+        try {
+            await subscribeNewsletter(email)
             setStatus("success")
-            setTimeout(() => {
+            resetTimer.current = setTimeout(() => {
                 setIsOpen(false)
                 setStatus("idle")
                 setEmail('')
             }, 2000)
-        }, 1000)
+        } catch (err) {
+            console.error(err)
+            setStatus("idle")
+        }
     }
 
     return (

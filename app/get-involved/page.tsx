@@ -4,6 +4,7 @@ import { HeroHeader } from "@/components/header";
 import Footer from "@/components/footer-3";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { submitGetInvolved } from "./actions";
 
 export default function GetInvolvedPage() {
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -11,9 +12,15 @@ export default function GetInvolvedPage() {
     async function handleAction(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setStatus("loading");
+        const form = new FormData(e.currentTarget);
         try {
-            // Simulate network request
-            await new Promise((resolve) => setTimeout(resolve, 1000));
+            await submitGetInvolved({
+                name: form.get("name") as string,
+                email: form.get("email") as string,
+                role: form.get("role") as string,
+                linkedin: form.get("linkedin") as string,
+                objective: form.get("objective") as string,
+            });
             setStatus("success");
         } catch (error) {
             console.error(error);
