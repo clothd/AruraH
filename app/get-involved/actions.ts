@@ -7,6 +7,8 @@ export async function submitGetInvolved(data: {
     email: string;
     role: string;
     linkedin: string;
+    organization: string;
+    position: string;
     objective: string;
 }) {
     const { error } = await supabase.from("get_involved_submissions").insert(data);
