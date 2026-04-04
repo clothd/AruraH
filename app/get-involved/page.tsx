@@ -8,22 +8,22 @@ import { submitGetInvolved } from "./actions";
 
 export default function GetInvolvedPage() {
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-    const [position, setPosition] = useState("");
+    const [role, setRole] = useState("");
 
     async function handleAction(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setStatus("loading");
         const form = new FormData(e.currentTarget);
         try {
-            const rawPosition = form.get("position") as string;
             await submitGetInvolved({
                 name: form.get("name") as string,
                 email: form.get("email") as string,
                 role: form.get("role") as string,
+                phone: form.get("phone") as string,
                 linkedin: form.get("linkedin") as string,
                 organization: form.get("organization") as string,
-                position: rawPosition === "other" ? form.get("otherPosition") as string : rawPosition,
-                objective: form.get("objective") as string,
+                position: form.get("position") as string,
+                department: form.get("department") as string | undefined,
             });
             setStatus("success");
         } catch (error) {
@@ -55,11 +55,40 @@ export default function GetInvolvedPage() {
                             </div>
                             <div>
                                 <label htmlFor="role" className="block text-sm font-medium mb-1">Role</label>
-                                <select id="role" name="role" defaultValue="" required className="w-full border rounded-md p-2 bg-background border-border">
+                                <select id="role" name="role" value={role} onChange={(e) => setRole(e.target.value)} required className="w-full border rounded-md p-2 bg-background border-border">
                                     <option value="" disabled>Select a role</option>
                                     <option value="developer">Developer</option>
                                     <option value="hotelier">Hotelier</option>
                                 </select>
+                            </div>
+                            {role === "hotelier" && (
+                                <div>
+                                    <label htmlFor="department" className="block text-sm font-medium mb-1">Department</label>
+                                    <select id="department" name="department" defaultValue="" required className="w-full border rounded-md p-2 bg-background border-border">
+                                        <option value="" disabled>Select a department</option>
+                                        <option value="General Manager">General Manager</option>
+                                        <option value="Reservation">Reservation</option>
+                                        <option value="Front Office">Front Office</option>
+                                        <option value="Housekeeping">Housekeeping</option>
+                                        <option value="Food and Beverage (F&B)">Food and Beverage (F&B)</option>
+                                        <option value="Kitchen (Culinary)">Kitchen (Culinary)</option>
+                                        <option value="Maintenance / Engineering">Maintenance / Engineering</option>
+                                        <option value="Sales and Marketing">Sales and Marketing</option>
+                                        <option value="Human Resources (HR)">Human Resources (HR)</option>
+                                        <option value="Accounting / Finance">Accounting / Finance</option>
+                                        <option value="Security">Security</option>
+                                        <option value="Purchasing / Procurement">Purchasing / Procurement</option>
+                                        <option value="Laundry">Laundry</option>
+                                        <option value="Spa and Wellness">Spa and Wellness</option>
+                                        <option value="Recreation / Activities">Recreation / Activities</option>
+                                        <option value="IT (Information Technology)">IT (Information Technology)</option>
+                                        <option value="Concierge / Guest Services">Concierge / Guest Services</option>
+                                    </select>
+                                </div>
+                            )}
+                            <div>
+                                <label htmlFor="phone" className="block text-sm font-medium mb-1">Phone Number</label>
+                                <input id="phone" name="phone" type="tel" required className="w-full border rounded-md p-2 bg-background border-border" placeholder="Your Phone Number" />
                             </div>
                             <div>
                                 <label htmlFor="linkedin" className="block text-sm font-medium mb-1">LinkedIn/Social Profile</label>
@@ -71,24 +100,7 @@ export default function GetInvolvedPage() {
                             </div>
                             <div>
                                 <label htmlFor="position" className="block text-sm font-medium mb-1">Current Position/Title</label>
-                                <select id="position" name="position" value={position} onChange={(e) => setPosition(e.target.value)} required className="w-full border rounded-md p-2 bg-background border-border">
-                                    <option value="" disabled>Select a position</option>
-                                    <option value="Executive">Executive</option>
-                                    <option value="Manager">Manager</option>
-                                    <option value="Software Engineer">Software Engineer</option>
-                                    <option value="Researcher">Researcher</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            {position === "other" && (
-                                <div>
-                                    <label htmlFor="otherPosition" className="block text-sm font-medium mb-1">Please specify your position</label>
-                                    <input id="otherPosition" name="otherPosition" type="text" required className="w-full border rounded-md p-2 bg-background border-border" placeholder="Title/Position" />
-                                </div>
-                            )}
-                            <div>
-                                <label htmlFor="objective" className="block text-sm font-medium mb-1">What do you wish to do?</label>
-                                <textarea id="objective" name="objective" required className="w-full border rounded-md p-2 bg-background border-border h-32" placeholder="Tell us about how you want to contribute..."></textarea>
+                                <input id="position" name="position" type="text" required className="w-full border rounded-md p-2 bg-background border-border" placeholder="Your Position" />
                             </div>
                             <Button type="submit" className="w-full" disabled={status === "loading"}>
                                 {status === "loading" ? "Submitting..." : "Submit"}

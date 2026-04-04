@@ -6,10 +6,11 @@ export async function submitGetInvolved(data: {
     name: string;
     email: string;
     role: string;
+    phone: string;
     linkedin: string;
     organization: string;
     position: string;
-    objective: string;
+    department?: string;
 }) {
     const { error } = await supabase.from("get_involved_submissions").insert(data);
 
